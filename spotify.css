@@ -1,0 +1,320 @@
+ html {
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: "Arial";
+    background-color: #121212;
+    color: #B3B3B3;
+}
+
+.navbar{
+    display: block;
+    padding: 10px;
+    text-align: right;
+    margin: 10px;
+}
+h2{
+     color:#B3B3B3;
+    text-align:center;
+
+}
+.navbar a
+{
+    color:#B3B3B3;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 20px;
+    display: inline;
+}
+.navbar a:hover{
+    color: #1DB954;
+}
+.top{
+    display: block;
+    text-align:center;
+    padding: 50px 20px;
+    background-color: #1DB954;
+    color: white;
+}
+.top h1{
+    font-size: 70px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+.top p{
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.bottom{
+    display: block;
+    padding: 40px;
+}
+
+.card{
+    display: inline-block;
+    padding: 40px;
+    background-color: #181818;
+    border-radius: 10px;
+    width: 300px;
+    margin: 40px;
+    text-align: center;
+  
+}
+.card:hover{
+    transform: scale(1.08);
+      box-shadow:0 0 10px #1DB954;
+}
+.card b{
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+.card p{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #B3B3B3;
+}
+audio{
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    
+    border: none;
+}
+hr{
+    border: 0px;
+    height: 1px;
+    background-color: #333;
+    margin: 20px;
+}
+.about-us {
+    background-color: #121212; 
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #1db954; 
+}
+
+.about-us p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    color: #dcdcdc;
+}
+.about-us {
+    border-top: 1px solid #2a2a2a;
+}
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: #1e1e1e;
+    padding: 25px;
+    width: 220px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.feature-card h4 {
+    color: #1db954;
+    margin: 15px 0 10px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #cfcfcf;
+}
+.contact-us {
+    background-color: #181818;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-us h2 {
+    color: #1db954;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact-us p {
+    color: #cccccc;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #2a2a2a;
+    color: white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaaaaa;
+}
+
+.contact-form button {
+    background: #1db954;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #17a44a;
+}
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;          /* LEFT side */
+    background-color: #1db954;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 75px;
+    height: 65px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: transform 0.3s, background 0.3s;
+    z-index: 999;
+}
+
+#scrollTopBtn:hover {
+    background-color: #17a44a;
+    transform: scale(1.1);
+}
+.footer {
+    background-color: #0f0f0f;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid #2a2a2a;
+}
+
+.footer p {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #1db954;
+}
+
+/* ========= MOBILE ONLY – SAFE SIZE SCALING ========= */
+@media (max-width: 600px) {
+
+    /* Text scaling */
+    body {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    /* Navbar */
+    .navbar a {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    /* Hero section */
+    .top h1 {
+        font-size: 42px;
+    }
+
+    .top p {
+        font-size: 18px;
+    }
+
+    /* Cards – keep same layout, just fit screen */
+    .card {
+        width: 90%;
+        margin: 20px auto;
+        padding: 25px;
+    }
+
+    .card b {
+        font-size: 22px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    /* About + Contact text */
+    .about-us h2,
+    .contact-us h2 {
+        font-size: 28px;
+    }
+
+    .about-us p,
+    .contact-us p {
+        font-size: 16px;
+    }
+
+    /* Scroll button – smaller thumb size */
+    #scrollTopBtn {
+        width: 48px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    /* Footer text */
+    .footer p,
+    .footer-links a {
+        font-size: 13px;
+    }
+}
