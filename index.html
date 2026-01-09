@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="Stylesheet" href="./spotify.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#">Login</a>
+    </div>
+
+    <div class="top">
+        <h1>Spotify</h1>
+        <p>Enjoy Music Like Never Before!</p>
+    </div>
+    
+    <div class="bottom">
+        <h2>Top Songs</h2>
+        <div class="card">
+            <img src="https://c.saavncdn.com/977/Laal-Peeli-Akhiyaan-From-Teri-Baaton-Mein-Aisa-Uljha-Jiya-Hindi-2024-20240111141044-500x500.jpg" height="250px"><br/>
+            <b>Laal Peeli Akhiyaan</b>
+            <p>Teri Baaton Mein Aisa Uljha Jiya</p>
+            <audio controls="">
+                <source type="audio/mp3" src="./Laal_Peeli_Akhiyaan_Song_Shahid_K_(getmp3.pro).mp3">
+            </audio> 
+        </div>
+
+        <div class="card">
+            <img src="https://c.saavncdn.com/504/Tainu-Khabar-Nahi-From-Munjya-Hindi-2024-20240601193522-500x500.jpg" height="250px"><br/>
+            <b>Tainu Khabar Nahi</b>
+            <p>Munjya</p>
+            <audio controls="">
+                <source type="audio/mp3" src="./Tainu_Khabar_Nahi_Munjya_Sharva_(getmp3.pro).mp3">
+            </audio>
+        </div>
+        <div class="card">
+            <img src="https://c.saavncdn.com/580/Angaaron-From-Pushpa-2-The-Rule-Hindi-2024-20240528221027-500x500.jpg" height="250px"><br/>
+            <b>Aangaron</b>
+            <p>Pushpa 2</p>
+            <audio controls="">
+                <source type="audio/mp3" src="./Angaaron - Pushpa 2 The Rule 128 Kbps.mp3">
+            </audio>
+        </div>
+
+        <div class="card">
+            <img src="https://i.scdn.co/image/ab67616d0000b2731aeabc1bb6028d255904dcb1" height="250px"><br/>
+            <b>Thumkeshwari</b>
+            <p>Bhediya</p>
+            <audio controls="">
+                <source type="audio/mp3" src="./Thumkeshwari - Bhediya 128 Kbps.mp3">
+            </audio>
+        </div>
+
+        <div class="card">
+            <img src="https://s.saregama.tech/image/c/fw_485/a/35/1c/aaj-ki-raat_ott_1440_1721739476.jpg" height="280px"><br/>
+            <b>Aaj ki Raat</b>
+            <p>Stree 2</p>
+            <audio controls="">
+                <source type="audio/mp3" src="./Aaj Ki Raat - Stree 2 128 Kbps.mp3">
+            </audio>
+        </div>
+
+        <div class="card">
+            <img src="https://c.saavncdn.com/440/Yeh-Jawaani-Hai-Deewani-2013-500x500.jpg" height="250px"><br/>
+            <b>Ilahi</b>
+            <p>Yeh Jawaani Hai Deewani</p>
+            <audio controls="">
+                <source type="audio/mp3" src="./Ilahi Full Video Song  Yeh Jawaani Hai Deewani  Ranbir Kapoor, Deepika Padukone  Pritam.mp3">
+            </audio>
+        </div>
+    </div>
+    <hr>
+
+    <div class="about-us" id="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to Spotify 🎵 <br><br>
+            We are passionate about delivering high-quality music experiences.
+            Enjoy your favorite songs anytime, anywhere, and discover new music
+            like never before.
+        </p>
+        <div class="features">
+            <div class="feature-card">
+                🎧
+                <h4>High Quality Music</h4>
+                <p>Stream music with crystal clear sound.</p>
+            </div>
+
+            <div class="feature-card">
+                🔥
+                <h4>Trending Songs</h4>
+                <p>Stay updated with the latest hits.</p>
+            </div>
+
+            <div class="feature-card">
+                ❤️
+                <h4>Made for You</h4>
+                <p>Personalized playlists you’ll love.</p>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+
+    <div class="contact-us" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? We’d love to hear from you 🎧</p>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <button id="scrollTopBtn">Scroll to Top</button>
+    <footer class="footer">
+    <p>© 2026 Spotify Clone | Designed by You</p>
+
+    <div class="footer-links">
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+    </div>
+    </footer>
+
+    <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    window.onscroll = function () {
+        if (document.documentElement.scrollTop > 300) {
+            scrollBtn.style.display = "block";
+        } else {
+            scrollBtn.style.display = "none";
+        }
+    };
+
+    scrollBtn.onclick = function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+</script>
+
+</body>
+</html>
